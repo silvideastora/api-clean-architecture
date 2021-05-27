@@ -1,12 +1,14 @@
 //para crear el router necesito importar express
 
 const express = require('express')
-
+const auth = require('../middlewares/auth')
 // importamos el caso de uso
 
 const koders = require('../usecases/koders')
 
 const router = express.Router()
+
+router.use(auth)
 
 router.get('/', async (request, response) => {
     try{

@@ -1,4 +1,4 @@
-
+require('dotenv').config()
 // importamos el servidor
 const server = require('./src/server')
 // importamos la base de datos
